@@ -1,0 +1,32 @@
+////
+/// @group effects
+////
+
+///
+.bl-fadein {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .4s;
+}
+
+///
+.bl-fadeout {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.4s, opacity 0.4s;
+}
+
+.bl-animate-all,
+.bl-animate-all::before,
+.bl-animate-all::after {
+	transition: all .5s var(--animation-curve);
+}
+
+	// Animated effect slides the icon over 4px on link hover.
+.bl-animate-all .icon {
+	transition: transform .5s var(--animation-curve);
+}
+.bl-animate-all:focus .icon,
+.bl-animate-all:hover .icon {
+	transform: translate3d(4px,0px,0);
+}

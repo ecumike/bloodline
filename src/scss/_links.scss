@@ -1,0 +1,33 @@
+////
+/// @group links
+////
+
+/// Default link color, hover, focus states.
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	
+	&:focus,
+	&:hover {
+		color: var(--dark-blue);
+		text-decoration: underline;
+	}
+	
+	&.no-underline:focus,
+	&.no-underline:hover, {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline-width: 2px;
+		
+		&:hover {
+			outline: none;
+		}
+	}
+
+	&:active {
+		outline: none;
+	}
+}
+

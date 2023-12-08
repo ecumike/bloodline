@@ -1,0 +1,37 @@
+////
+/// @group tabs
+////
+
+/// Attribute added to outer container to init JS widget.
+[data-widget=dyntabs] { 
+	flex-flow: row wrap;
+}
+
+/// Tab class added to each tab.
+.bl-tab {
+	background: var(--tab-background);
+	flex: 1;
+
+	&:focus,
+	&:hover {
+		background: var(--blue);
+	}
+
+	+ .bl-tab {
+		border-left: 1px solid var(--moon-gray);
+	}
+
+	&.bl-active {
+		background: var(--dark-blue);
+		color: #fff;
+	}
+}
+
+/// Add to each tab's content DIV, used for show/hiding 'active' tab contents.
+.bl-tab-content {
+	display: none;
+	
+	&.bl-active {
+		display: block;
+	}
+}

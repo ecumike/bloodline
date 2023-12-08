@@ -1,0 +1,10 @@
+////
+/// @group tooltip
+////
+
+/// hinttip adjustment - smaller text and small rounded edge.
+[class*="hint--"]::after {
+	border-radius: .25rem;
+	font-size: .875rem !important;
+	font-weight: normal;
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "name": "Bloodline",
+  "description": "Design system",
+  "author": "Michael Santelia",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp build",
+    "ghpages": "gulp publish-ghpages",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecumike/bloodline/"
+  },
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@ronilaukkarinen/gulp-stylelint": "^14.1.1",
+    "browser-sync": "^2.27.6",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-jshint": "^2.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "5.0.0",
+    "gulp-sass-lint": "1.4.0",
+    "gulp-size": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "jshint-stylish": "^2.2.1",
+    "node-notifier": "^10.0.1",
+    "notify-send": "^0.1.2",
+    "sass": "^1.43.3",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-csstree-validator": "^3.0.0",
+    "stylelint-scss": "^5.0.1"
+  }
+}

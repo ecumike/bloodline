@@ -1,0 +1,56 @@
+////
+/// @group border hover colors
+////
+
+
+///
+.b--transition-color {
+	transition: border-color .5s var(--animation-curve);
+}
+
+///
+.hover-b--current {
+	&:focus,
+	&:hover {
+		border-color: currentColor;
+	}
+}
+
+///
+.hover-b--blue {
+	&:focus,
+	&:hover {
+		border-color: var(--blue);
+	}
+}
+///
+.hover-b--dark-blue {
+	&:focus,
+	&:hover {
+		border-color: var(--dark-blue);
+	}
+}
+
+///
+.hover-b--green {
+	&:focus,
+	&:hover {
+		border-color: var(--green);
+	}
+}
+
+///
+.hover-b--dark-green {
+	&:focus,
+	&:hover {
+		border-color: var(--dark-green);
+	}
+}	
+
+///
+.hover-b--red {
+	&:focus,
+	&:hover {
+		border-color: var(--red);
+	}
+}

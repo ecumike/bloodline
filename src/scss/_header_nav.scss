@@ -1,0 +1,62 @@
+////
+/// @group sitenav
+////
+
+:root {
+	--header-link-color: var(--near-white);
+	--header-link-hover-color: var(--yellow);
+}
+/// Site menu nav
+.bl-header-nav {
+
+	border-bottom: 1px solid var(--mid-gray);
+
+/// Active item
+	.bl-active:after {
+		background: var(--header-link-hover-color);
+		content: "";
+		height: 4px;
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: 0;
+	}
+
+	a {
+		color: var(--header-link-color);
+		text-decoration: none;
+		fill: currentColor;
+		
+		&:focus,
+		&:hover {
+			color: var(--header-link-hover-color);
+
+			&::after {
+				height: 4px;
+			}
+		}
+		
+		/* Bottom border that slides up */
+		&::after {
+			background: var(--header-link-hover-color);
+			content: "";
+			height: 0px;
+			width: 100%;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			transition: height .5s var(--animation-curve);
+		}
+
+	}
+
+	.icon {
+		transition: fill .15s ease-in; /* matches hover anitate */
+	
+		&.help {
+			width: 18px;
+		}
+
+	}
+
+}

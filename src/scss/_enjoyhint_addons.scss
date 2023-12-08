@@ -1,0 +1,54 @@
+/* Custom styles for our use */
+.enjoy_hint_label {
+	font-family: Comic Sans MS, Helvetics, sans-serif;
+}
+
+.enjoyhint_next_btn,
+.enjoyhint_skip_btn {
+	background-color: #fff;
+	border-color: #fff;
+	color: var(--dark-green);
+}
+
+.enjoyhint_next_btn {
+	color: var(--dark-green);
+	
+	&:hover {
+		background-color: var(--dark-green);
+	}
+	&:active {
+		border-color: var(--dark-green);
+	}
+}
+
+.enjoyhint_skip_btn {
+	color: var(--dark-red);
+
+	&:hover {
+		background-color: var(--dark-red);
+	}
+	&:active {
+		border-color: var(--dark-red);
+	}
+}
+
+.enjoyhint_close_btn {
+	border-color: #fff;
+	background-color: #fff;
+	
+	&:before,
+	&:after,
+	&:hover {
+		background-color: var(--dark-red);
+	}
+	
+	&:active {
+		border-color: var(--dark-red);
+	}
+
+	&:hover:before,
+	&:hover:after {
+		background-color: #fff;
+	}
+}
+

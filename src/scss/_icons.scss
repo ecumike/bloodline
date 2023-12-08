@@ -1,0 +1,104 @@
+////
+/// @group icons
+////
+
+
+///
+.icon {
+	fill: currentcolor;
+	transform: translate3d(0,0px,0);
+	width: 20px;
+	height: auto;
+
+	a:focus,
+	a:hover & {
+		fill: currentcolor;
+	}
+}
+
+///
+.icon-after .icon {
+	margin-left: .5rem;
+}
+
+///
+.hover {
+	.icon:focus,
+	.icon:hover {
+		fill: var(--dark-blue);
+	}
+}
+
+/// Class is added to all icons. Default icon color is inherited. <br>Classes set the color on the 'fill' so the icon is colored.
+.icon {
+///	
+	.blue & {
+		fill: var(--blue);
+	}
+
+///	
+	.dark-blue & {
+		fill: var(--dark-blue);
+	}
+	
+///	
+	.dark-green & {
+		fill: var(--dark-green);
+	}
+	
+///	
+	.dark-red & {
+		fill: var(--dark-red);
+	}
+	
+///	
+	.dark-yellow & {
+		fill: #a96e02;
+	}
+	
+///	
+	.gray & {
+		fill: var(--gray);
+	}
+	
+///	
+	.green & {
+		fill: var(--green);
+	}
+	
+///	
+	.light-blue & {
+		fill: var(--light-blue);
+	}
+	
+///	
+	.red & {
+		fill: var(--red);
+	}
+	
+///	
+	.textcolor & {
+		fill: var(--textcolor);
+	}
+	
+///	
+	.white & {
+		fill: #fff;
+	}
+	
+///	
+	.yellow & {
+		fill: var(--yellow);
+	}
+///	
+	.orange & {
+		fill: var(--orange);
+	}
+}
+
+/// For use on colored backgrounds, keeps the icon white on hover.
+.hover-white:focus .icon,
+.hover-white:hover .icon {
+	fill: #fff;
+}
+
